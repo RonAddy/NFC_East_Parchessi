@@ -41,7 +41,7 @@ const eagle_sideline = document.getElementById("eagles")
 
 *-------------------------------------------------------------------*/
 function welcome() {
-    alert("Welcome to NFC East Parchessi! Your plan is to take the Eagles to the Promise Land...THE SUPER BOWL. But first! We must get through the NFC East. Are you ready? Roll the dice to begin");
+    alert("Welcome to NFC East Parchessi! Your mission is to take the Eagles to the Promise Land...THE SUPER BOWL. But first! We must get through the NFC East. Are you ready? Roll the dice to begin !");
 }
 
 welcome();

@@ -203,3 +203,35 @@ body{
     color: #ff0000;
     cursor: pointer;
 }
+.arrows{
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80px;
+    height:80px;
+    position: absolute;
+}
+
+#a1 {
+    top:225px;
+    left: 597px;
+    transform: perspective(2000px) rotateX(58deg) rotate(-45deg);
+}
+
+#a2 {
+    top:230px;
+    left: 773px;
+    transform: perspective(2000px) rotateX(58deg) rotate(45deg); 
+}
+
+#a3 {
+    top:340px;
+    left: 583px;
+    transform: perspective(2000px) rotateX(58deg) rotate(-145deg);
+}
+
+#a4 {
+    top:347px;
+    left: 773px;
+    transform: perspective(2000px) rotateX(58deg) rotate(145deg);
+}
