@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'NFL_RedZone';
+    src:url(../font/NFL_RedZone.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+body{
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container{
+    border: 10px solid black;
+    border-radius: 15px;
+    width: 750px;
+    margin: auto;
+    margin-top: 80px;
+    transform: perspective(2000px) rotateX(58deg);
+    transform-origin: center top;
+}
+
+#dice {
+    background-image: url(../img/dice.png);
+    background-repeat: no-repeat;
+    height: 220px;
+    width: 230px;
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    cursor: pointer;
+}
+
+.parent-div {
+    display: flex;
+    width: 750px;
+    margin: auto;
+}
+
+#eagles {
+    background-image: url(../img/teams/eagles.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #003d47;
+    width: 300px;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+#b49 {
+    width: 150px;
+    height:150px;
+    background-color: green;
+    margin: auto;
+    background-image: url(../img/endzone.gif);
+    background-repeat: round;
+}
+
+#dice-Output {
+    font-family: 'NFL_RedZone';
+    font-size: 30pt;
+    border-bottom: 5px solid white;
+    height: 35px;
+    width: 92px;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    right: 60px;
+    color: white;
+    
+}
+#cowboys {
+    background-image: url(../img/teams/cowboys.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #969ea9;
+    width: 300px;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+#redksins {
+    background-image: url(../img/teams/redskins.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffc400;
+    width: 300px;
+    height: 300px;
+/*    flex-wrap: wrap;*/
+}
+
+#giants {
+    background-image: url(../img/teams/giants.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+.vertical-board {
+    width: 150px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.horizontal-board{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pieces {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 100%;
+    text-align: center;
+    color: white;
+    
+}
+
+.white-divs-vert {
+    width: 48px;
+    height: 58.2px;
+    background-color: white;
+    border: 1px solid black;
+    overflow-y:auto;
+}
+
+.white-divs-horiz {
+    width: 58px;
+    height: 48px;
+    background-color: white;
+    border: 1px solid black;
+    overflow-y:auto;
+}
+
+.eagle_special{
+    background-color: #003d47;
+    width: 58px;
+    height: 48px;
+    border: 1px solid black;
+    overflow-y:auto;
+}
+
+.redskin_special{
+    background-color: #ffc400;;
+    width: 48px;
+    height: 58.2px;
+    border: 1px solid black;
+    overflow-y:auto;
+}
+
+.giants-special{
+    background-color: red;
+    width: 58px;
+    height: 48px;
+    border: 1px solid black;
+    overflow-y:auto;
+}
+
+.cowboy_special{
+    background-color: #969ea9;
+    width: 48px;
+    height: 58.2px;
+    border: 1px solid black;
+    overflow-y:auto;
+}
+
+#redskin_1, #redskin_2, #redskin_3, #redskin_4 {
+    background-color: #720a00;
+    border-color: black;
+    cursor: pointer;
+}
+
+#eagle_1, #eagle_2, #eagle_3, #eagle_4 {
+    background-color: black;
+    border-color: #003d47;
+    cursor: pointer;
+}
+
+#cowboy_1, #cowboy_2,#cowboy_3,#cowboy_4 {
+    background-color: #001f45;
+    border-color: white;
+    color: #969ea9;
+    cursor: pointer;
+} 
+
+#giants_1, #giants_2, #giants_3, #giants_4 {
+    background-color: #1e256f;
+    border-color: #969ea9;
+    color: #ff0000;
+    cursor: pointer;
+}
