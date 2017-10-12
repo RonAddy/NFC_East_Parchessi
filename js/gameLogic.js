@@ -35,6 +35,16 @@ const alshon = document.getElementById("eagle_2")
 const jenkins = document.getElementById("eagle_3")
 const kendricks = document.getElementById("eagle_4")
 const eagle_sideline = document.getElementById("eagles")
+const cousins = document.getElementById('redskin_1')
+const pryor = document.getElementById("redskin_2")
+const norman = document.getElementById("redskin_3")
+const kerrigan = document.getElementById(" redskin_4")
+const dak = document.getElementById("cowboy_1");
+const eli = document.getElementById("giants_1");
+const redskins_square = document.getElementById("b12");
+const giants_square = document.getElementById("b24");
+const cowboys_square = document.getElementById("b35");
+    
 
 
 /*---------------------Game Logic Below------------------------------
@@ -53,8 +63,9 @@ welcome();
 //If user rolls a 6, they will play and be able to roll again
 //If user rolls 4 sixes in a row, they will lose their turn
 *-------------------------------------------------------------------*/
-
-
+redskins_square.appendChild(cousins);
+giants_square.appendChild(eli);
+cowboys_square.appendChild(dak);
 const squareOne = function(){
                      landingSquare.appendChild(this);
                      //remove ability to click mutliple pieces on six roll
@@ -78,43 +89,82 @@ const reposition = function() {
         
 
 const diceRoll = function() {
-    const roll = Math.ceil(/*Math.random()**/  6);
+    const roll = Math.ceil(Math.random()*  6);
 
     dice.style.animation = `spin .5s linear`;
     output.innerHTML = roll;
     
     if (roll === 6) {
         setTimeout(function () {alert("You rolled a SIX! You can move a player onto the board")}, 200);
-//        if (wentz.parentNode !== eagle)
+
         wentz.addEventListener("click", squareOne)
         alshon.addEventListener("click", squareOne)
         jenkins.addEventListener("click", squareOne)
         kendricks.addEventListener("click", squareOne)
+        move;
         
-//        move()    
     }else if( roll !== 6 && wentz.parentNode === eagle_sideline && alshon.parentNode === eagle_sideline && jenkins.parentNode === eagle_sideline && jenkins.parentNode === eagle_sideline) {
         setTimeout(function() {alert("Computer's turn!")}, 400);
-        
+        moveRedskin(); 
+        moveCowboy();
+        moveGiant();
     }
     
     
     //bellow line used to reset animation so that it runs every click
     setTimeout(function() {dice.style.animation = null}, 1000);
     localStorage.setItem("currentRoll", roll)
+    move;
 }
 
 //EventListener added to div with dice
 document.getElementById('dice').addEventListener("click", diceRoll);
 
 
-//function moveOppoenets() {
-//    const cousins 
-//    const pryor
-//    const norman
-//    const kerrigan
-//    
-//    const
-//    const
-//    const
-//    const
-//}
+function moveRedskin() {
+    setInterval(function(){
+        const roll = Math.ceil(Math.random() *  3);
+        localStorage.setItem("compRoll", roll);
+        
+        
+        let currSpot = `b`;
+        let nextSpot = parseInt(cousins.parentNode.id.slice(1)) + parseInt(roll);
+        
+
+        let newSpot = currSpot + nextSpot;
+        document.getElementById(`${newSpot}`).appendChild(cousins);
+        
+    }, 5000);
+}
+
+function moveGiant() {
+    setInterval(function(){
+        const roll = Math.ceil(Math.random() *  2);
+        localStorage.setItem("compRoll", roll);
+        
+        
+        let currSpot = `b`;
+        let nextSpot = parseInt(cousins.parentNode.id.slice(1)) + parseInt(roll);
+        
+
+        let newSpot = currSpot + nextSpot;
+        document.getElementById(`${newSpot}`).appendChild(eli);
+        
+    },3000);
+}
+
+function moveCowboy() {
+    setInterval(function(){
+        const roll = Math.ceil(Math.random() *  3);
+        localStorage.setItem("compRoll", roll);
+        
+        
+        let currSpot = `b`;
+        let nextSpot = parseInt(cousins.parentNode.id.slice(1)) + parseInt(roll);
+        
+
+        let newSpot = currSpot + nextSpot;
+        document.getElementById(`${newSpot}`).appendChild(dak);
+        
+    }, 5000);
+}
