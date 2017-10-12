@@ -19,6 +19,8 @@ at once
 
 Wireframes-->
 
+(Inside of wireframes folder)
+
 How-to-use instructions-->
 
 The alerts will help you go through the game. On load, you will be given a description of what the mission is and your first move is to click the dice. A six will allow you to move a piece from the 'sidelines' and after you make a move, the computer pieces will move randomly on the board. You roll the dice again after the computer moves to then move your pieces around. The object of the game is to move your pieces around the board and bring them into the 'endzone' before the other teams have a chance to bring you all back home.
