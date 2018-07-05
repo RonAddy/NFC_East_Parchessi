@@ -1,51 +1,6 @@
+import { teams } from './teams.js';
 
-const eagles = {
-    player1: "Wentz",
-    player2: "Alshon",
-    player3: "Jenkins",
-    player4: "Kendricks"
-}
-
-const redskins = {
-    player1: "Cousins",
-    player2: "Pryor",
-    player3: "Norman",
-    player4: "Kerrigan"
-}
-
-const giants = {
-    player1: "Manning",
-    player2: "Beckham Jr.",
-    player3: "Pierre-Paul",
-    player4: "Rodgers-Cromartie"
-}
-
-const cowboys = { 
-    player1: "Prescott",
-    player2: "Elliot",
-    player3: "Smith",
-    player4: "Scandrick"
-}
-
-const output = document.getElementById('dice-Output');
-const dice = document.getElementById('dice');
-const landingSquare = document.getElementById('b1')
-const wentz = document.getElementById("eagle_1")
-const alshon = document.getElementById("eagle_2")
-const jenkins = document.getElementById("eagle_3")
-const kendricks = document.getElementById("eagle_4")
-const eagle_sideline = document.getElementById("eagles")
-const cousins = document.getElementById('redskin_1')
-const pryor = document.getElementById("redskin_2")
-const norman = document.getElementById("redskin_3")
-const kerrigan = document.getElementById(" redskin_4")
-const dak = document.getElementById("cowboy_1");
-const eli = document.getElementById("giants_1");
-const redskins_square = document.getElementById("b12");
-const giants_square = document.getElementById("b24");
-const cowboys_square = document.getElementById("b35");
-    
-
+console.log(teams);
 
 /*---------------------Game Logic Below------------------------------
 
