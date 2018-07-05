@@ -1,4 +1,4 @@
-export default board = {
+const board = {
      output : document.getElementById('dice-Output'),
      dice : document.getElementById('dice'),
      landingSquare : document.getElementById('b1'),
@@ -26,3 +26,5 @@ export default board = {
      cowboys_square : document.getElementById("b35")
 
 } 
+
+export default board

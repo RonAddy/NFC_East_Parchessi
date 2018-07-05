@@ -1,4 +1,4 @@
-import {board} from 'boardPieces';
+import board from './boardPieces';
 
 const eagles = {
     players: [
@@ -58,7 +58,7 @@ const eagles = {
 // }
 
 
-module.exports = {
+export {
     eagles
 }
 
