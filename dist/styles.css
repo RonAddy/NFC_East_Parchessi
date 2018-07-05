@@ -43,7 +43,22 @@ body{
     margin: auto;
 }
 
-#eagles {
+
+/*
+/////////////////////////////////////
+/////////////////////////////////////
+Main Board:
+
+All 4 player corners
+Boards squares
+"End-Zone"
+Pieces
+/////////////////////////////////////
+/////////////////////////////////////
+*/
+
+
+#topLeft{
     background-image: url(../img/teams/eagles.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -51,6 +66,15 @@ body{
     width: 300px;
     height: 300px;
     flex-wrap: wrap;
+}
+
+#topRight {
+    background-image: url(../img/teams/redskins.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffc400;
+    width: 300px;
+    height: 300px;
 }
 
 #b49 {
@@ -62,20 +86,7 @@ body{
     background-repeat: round;
 }
 
-#dice-Output {
-    font-family: 'NFL_RedZone';
-    font-size: 30pt;
-    border-bottom: 5px solid white;
-    height: 35px;
-    width: 92px;
-    text-align: center;
-    position: absolute;
-    top: 30%;
-    right: 60px;
-    color: white;
-    
-}
-#cowboys {
+#bottomLeft{
     background-image: url(../img/teams/cowboys.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -85,17 +96,7 @@ body{
     flex-wrap: wrap;
 }
 
-#redksins {
-    background-image: url(../img/teams/redskins.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #ffc400;
-    width: 300px;
-    height: 300px;
-/*    flex-wrap: wrap;*/
-}
-
-#giants {
+#bottomRight{
     background-image: url(../img/teams/giants.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -104,7 +105,6 @@ body{
     height: 300px;
     flex-wrap: wrap;
 }
-
 .vertical-board {
     width: 150px;
     height: 300px;
@@ -126,6 +126,24 @@ body{
     border: 1px solid black;
     border-radius: 100%;
     text-align: center;
+    color: white;
+    
+}
+
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+
+#dice-Output {
+    font-family: 'NFL_RedZone';
+    font-size: 30pt;
+    border-bottom: 5px solid white;
+    height: 35px;
+    width: 92px;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    right: 60px;
     color: white;
     
 }
