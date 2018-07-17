@@ -2,9 +2,9 @@ const board = {
      output : document.getElementById('dice-Output'),
      dice : document.getElementById('dice'),
     
-    /////////////
+    //////////////////////////////////////
     // Top right
-    /////////////
+   //////////////////////////////////////
     
     // Pieces
      topRight_1 : document.getElementById("eagle_1"),
@@ -16,11 +16,11 @@ const board = {
      topRight_sideline : document.getElementById("eagles"),
     
      // Home Square
-     landingSquare : document.getElementById('b1'),
+     topRight_landing : document.getElementById('b1'),
     
-    ///////////
+    //////////////////////////////////////
     //Top left
-    ///////////
+    //////////////////////////////////////
   
     // Pieces
      topLeft_1 : document.getElementById('redskin_1'),
@@ -28,6 +28,11 @@ const board = {
      topLeft_3: document.getElementById("redskin_3"),
      topLeft_4 : document.getElementById(" redskin_4"),
     
+    // Sideline
+     topLeft_sideline : document.getElementById("eagles"),
+    
+     // Home Square
+     topLeft_landing : document.getElementById('redskins'),
     
      ///////////////////////////
      //Bottom Left
